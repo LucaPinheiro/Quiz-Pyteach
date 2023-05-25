@@ -43,10 +43,6 @@ public class Contadores {
         ContadorTentativaF6 = 0;
     }
 
-    public static void zeraContadorFase2() {
-        ContadorTentativaF2 = 0;
-    }
-
     public static void main(String[] args) {
         if (ContadorTentativaF2 == 3) {
             if (ContadorAcertoF2 < 2) {
@@ -72,6 +68,7 @@ public class Contadores {
         ContadorTentativaFinal = 0;
     }
 
+    // Método para mandar contadores para o banco de dados
     public static void mandaContadores() throws Exception {
         Login login = new Login();
         String ra = login.getRaLoginTextField().getText();
