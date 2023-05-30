@@ -16,7 +16,7 @@ public class MySQL {
 
     private static final String USER = "root";
 
-    private static final String PASSWORD = "db_password";
+    private static final String PASSWORD = "dbpassword";
 
     public static Connection getConnection() throws Exception {
         try {

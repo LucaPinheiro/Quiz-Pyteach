@@ -204,8 +204,10 @@ public class Ranking extends javax.swing.JFrame {
         MenuPrincFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+    // Preencher a tabela com as devidas pontuações
     public void preencherTabela() {
+        jTable1.setEnabled(false);
         try (Connection connection = loginandsignup.MySQL.getConnection()) {
             String query = "SELECT U.RA, CONCAT(U.nome, ' ', U.sobrenome) AS NomeCompleto, ROUND((SUM(AcertosFase1) + SUM(AcertosFase2) + SUM(AcertosFase3) + SUM(AcertosFase4) + SUM(AcertosFase5) + SUM(AcertosFase6)) / SUM(Tentativas) * 100, 2) AS ResultadoFinal "
                     + "FROM usuarioJogo AS UJ "
@@ -252,7 +254,6 @@ public class Ranking extends javax.swing.JFrame {
     }
 
     Login login = new Login();
-    //String ra = login.getRaLoginTextField().getText();
 
     public final void setaRa() {
         RaRankingTF.setText(login.ra);

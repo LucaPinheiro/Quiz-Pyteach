@@ -3,7 +3,6 @@ package loginandsignup;
 import javax.swing.JFrame;
 import javax.swing.*;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -234,6 +233,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // Verificando se o usuário tem conta e pode logar em sua conta
         if (raLoginTextField.getText().length() == 10) {
             ra = raLoginTextField.getText();
             if (passwordLoginTextField.getText().length() >= 3 && passwordLoginTextField.getText().length() <= 21) {
