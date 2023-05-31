@@ -10,6 +10,7 @@ public class Login extends javax.swing.JFrame {
     
     public static String ra;
 
+
     public Login() {
         initComponents();
         // Arrumar aqui, esta puxando o ra antes e ser colocado
