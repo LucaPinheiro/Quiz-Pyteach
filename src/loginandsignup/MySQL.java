@@ -13,36 +13,24 @@ public class MySQL {
 
     private static final String USER = "root";
 
-    private static final String PASSWORD = "dbpassword";
+    private static final String PASSWORD = "1234";
 
     public static Connection getConnection() throws Exception {
-        try {
+  try {
             //Class.forName(DRIVER);
 
             Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
             //System.out.println("Connected");
 
             return conn;
-
+            
         } catch (SQLException error) {
             System.err.println(error);
-            JOptionPane.showMessageDialog(null, "É necessário colocar sua senha do Banco De Dados.");
-            String senha = JOptionPane.showInputDialog(null, "Digite sua senha: ");
-            Connection conn = null;
-            boolean senhaCorreta = false;
+            //JOptionPane.showMessageDialog(null, "É necessário colocar sua senha do Banco De Dados.");
+            //String senha = JOptionPane.showInputDialog(null, "Digite sua senha: ");
+            //Connection conn = DriverManager.getConnection(URL, USER, senha);
 
-            while (!senhaCorreta) {
-                try {
-                    conn = DriverManager.getConnection(URL, USER, senha);
-                    senhaCorreta = true;
-                } catch (SQLException e) {
-                    System.err.println(e);
-                    JOptionPane.showMessageDialog(null, "Senha incorreta! Digite novamente.");
-                    senha = JOptionPane.showInputDialog(null, "Digite sua senha: ");
-                }
-            }
-
-            return conn;
+            return null;
         }
 
     }
