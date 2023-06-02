@@ -1,15 +1,14 @@
 package loginandsignup;
 
+import java.sql.Connection;
 import javax.swing.JOptionPane;
 import loginandsignup.Jogar.PrimeiroJogar;
 
 public class MenuPrinc extends javax.swing.JFrame {
 
-  
     public MenuPrinc() {
         initComponents();
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -205,8 +204,16 @@ public class MenuPrinc extends javax.swing.JFrame {
                 JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
         System.out.println(x);
         if (x == 0) {
-            this.dispose();
-        }      
+            try (Connection con = MySQL.getConnection()) {
+                if (con != null) {
+                    con.close();
+                    System.out.println("Fechando");
+                }
+                this.dispose();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -225,8 +232,6 @@ public class MenuPrinc extends javax.swing.JFrame {
         PrimeiroJogarFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
-
-
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
