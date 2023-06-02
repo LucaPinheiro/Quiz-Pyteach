@@ -199,7 +199,7 @@ public class MenuPrinc extends javax.swing.JFrame {
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         String[] options = {"Sim", "Não"};
 
-        int x = JOptionPane.showOptionDialog(null, "Deseja realmente sair do jogo",
+        int x = JOptionPane.showOptionDialog(null, "Deseja realmente sair do jogo?",
                 "Sair",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
         System.out.println(x);

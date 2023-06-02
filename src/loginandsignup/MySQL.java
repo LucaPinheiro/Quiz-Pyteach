@@ -3,44 +3,46 @@ package loginandsignup;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.io.FileInputStream;
-import java.util.Properties;
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 public class MySQL {
 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/pyteach";
-    private static final String CONFIG_FILE = "config.properties";
 
-    private static boolean isConnected = false; // Variável para controlar se a conexão já foi estabelecida
-    private static String user = null; // Variável para armazenar o nome de usuário
-    private static String password = null; // Variável para armazenar a senha
+    private static boolean isConnected = false;
+    private static String user = null;
+    private static String password = null;
 
-    public static Connection getConnection() throws Exception {
+    public static Connection getConnection() throws SQLException {
         if (isConnected) {
-            // Conectado
             return DriverManager.getConnection(URL, user, password);
         }
 
         Connection conn = null;
-        boolean tentarNovamente = true;
+        boolean tryAgain = true;
 
-        while (conn == null && tentarNovamente) {
+        while (conn == null && tryAgain) {
             if (user == null || password == null) {
-                readCredentialsFromProperties();
+                readCredentialsFromDialog();
             }
 
             try {
                 conn = DriverManager.getConnection(URL, user, password);
-                isConnected = true; // Conectado
+                isConnected = true;
             } catch (SQLException error) {
                 System.err.println(error);
-                int option = JOptionPane.showConfirmDialog(null, "Credenciais incorretas. Deseja tentar novamente?");
-                if (option != JOptionPane.YES_OPTION) {
-                    tentarNovamente = false; // Não tentar novamente
+                int option = JOptionPane.showOptionDialog(null, "Credenciais incorretas. Deseja tentar novamente?", "Acesso ao Banco de Dados",
+                        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null,
+                        new String[]{"Sim", "Não"}, "Sim");
+
+                if (option == JOptionPane.NO_OPTION) {
+                    tryAgain = false;
                     break;
                 }
+
                 user = null;
                 password = null;
             }
@@ -49,18 +51,22 @@ public class MySQL {
         return conn;
     }
 
-    private static void readCredentialsFromProperties() {
-        try {
-            Properties props = new Properties();
-            FileInputStream input = new FileInputStream(CONFIG_FILE);
-            props.load(input);
+    private static void readCredentialsFromDialog() {
+        JPasswordField passwordField = new JPasswordField();
+        JTextField userField = new JTextField();
 
-            user = props.getProperty("db.user");
-            password = props.getProperty("db.password");
-        } catch (Exception e) {
-            System.err.println("Erro ao ler o arquivo de configuração: " + e.getMessage());
-            user = JOptionPane.showInputDialog(null, "Digite o nome de usuário do banco de dados:");
-            password = JOptionPane.showInputDialog(null, "Digite a senha do banco de dados:");
-      }
+        Object[] message = {
+                "Usuário:", userField,
+                "Senha:", passwordField
+        };
+
+        int option = JOptionPane.showConfirmDialog(null, message, "Acesso ao Banco de Dados", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+        if (option == JOptionPane.OK_OPTION) {
+            user = userField.getText();
+            password = new String(passwordField.getPassword());
+        } else {
+            // O usuário cancelou, você pode tratar isso de acordo com a sua necessidade
+        }
     }
 }

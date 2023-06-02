@@ -16,7 +16,6 @@ public class Login extends javax.swing.JFrame {
         // Arrumar aqui, esta puxando o ra antes e ser colocado
         JTextField raLoginTextField = getRaLoginTextField();
         String raText = raLoginTextField.getText();
-        System.out.println("Valor do raLoginTextField: " + raText);
 
     }
 
@@ -36,8 +35,6 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         raLoginTextField = new javax.swing.JTextField();
@@ -131,17 +128,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setText("Esqueci minha senha");
-
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 51, 51));
-        jButton3.setText("Alterar senha");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("LOGIN");
@@ -175,15 +161,10 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(LeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, LeftLayout.createSequentialGroup()
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, LeftLayout.createSequentialGroup()
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton3))))))
+                            .addGroup(LeftLayout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(28, Short.MAX_VALUE))
         );
         LeftLayout.setVerticalGroup(
@@ -205,11 +186,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(LeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jButton2))
-                .addGap(18, 18, 18)
-                .addGroup(LeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jButton3))
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         jPanel1.add(Left);
@@ -243,13 +220,9 @@ public class Login extends javax.swing.JFrame {
 
                     String SQLUser = "SELECT * FROM `usuario` WHERE RA='" + raLoginTextField.getText() + "'";
                     ResultSet rs = stmt.executeQuery(SQLUser);
-                    System.out.println("foi aqui no RS da query ");
 
                     if (rs.next()) {
-                        System.out.println("Passou rs.next");
-                        System.out.println(rs.getString("RA"));
                         if (rs.getString("senha").equals(passwordLoginTextField.getText())) {
-                            System.out.println("Passou do getstring");
                             if (rs.getString("RA").equals(raLoginTextField.getText())) {
                                 JOptionPane.showMessageDialog(null, "Conectando!!!");
 
@@ -263,7 +236,7 @@ public class Login extends javax.swing.JFrame {
                                 stmt.close();
                                 rs.close();
                             } else {
-                                System.out.println("não passou do else");
+                                System.out.println("");
                             }
                         } else {
                             JOptionPane.showMessageDialog(null, "A senha informada está incorreta!");
@@ -282,11 +255,7 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Seu usuário deve conter entre 3 até 21 caracteres");
         }
 
-        //JFrame MenuPrincFrame = (JFrame) new MenuPrinc();
-        //MenuPrincFrame.setVisible(true);
-        //MenuPrincFrame.pack();
-        //MenuPrincFrame.setLocationRelativeTo(null);
-        //this.dispose();
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -296,10 +265,6 @@ public class Login extends javax.swing.JFrame {
         SignUpFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void raLoginTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_raLoginTextFieldActionPerformed
         // TODO add your handling code here:
@@ -319,7 +284,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel Right;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -327,7 +291,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField passwordLoginTextField;
