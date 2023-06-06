@@ -1,44 +1,53 @@
-# Quiz-Pyteach
-Instituto Mauá de Tecnologia - Ciência Da Computação - Primeiro Semestre
-Projeto Integrador Interdiciplinar - PyTeach: Um jogo de perguntas e respostas que tem como objetivo fazer uma avaliação dos seus conhecimentos sobre Lógica de proramação e Python!
-⏳ Começando:
+# PyTeach - Quiz de Lógica de Programação e Python
+O PyTeach é um jogo de perguntas e respostas que tem como objetivo avaliar seus conhecimentos sobre lógica de programação e Python!
 
-📋 Pré-requisitos
+# Sumário
+O projeto foi desenvolvido como parte do Projeto Integrador Interdisciplinar do Instituto Mauá de Tecnologia, no curso de Ciência da Computação. O jogo utiliza a linguagem Java e um banco de dados MySQL para armazenar as perguntas e os dados dos jogadores.
 
-Para instalar esta aplicação, você necessita possuir java e algum serviço de banco de dados instalados em sua área de trabalho.
+# Pré-requisitos
+Antes de instalar o jogo, certifique-se de ter o Java e um serviço de banco de dados instalados em sua área de trabalho.
 
-Para conseguir realizar o Quiz, de certa maneira, é interessante conhecer conceitos básicos sobre Programação, pois assim, o usuário poderá atingir uma maior pontuação no questionário.
+Para instalar o Java, siga as instruções fornecidas pela Oracle em https://www.java.com/download/ie_manual.jsp.
 
-⚙ Instalação
+Para instalar o serviço de banco de dados, recomendamos o MySQL. Você pode baixar o MySQL em https://dev.mysql.com/downloads/installer/.
 
-# Para instalar, baixe o arquivo zip. Database: https://drive.google.com/file/d/1l1Bv6B3j_uDSb7oYzJX1-3Q8CTfXO5MC/view?usp=drive_link
+# Instalação
+Faça o download do arquivo zip do jogo: link para o arquivo zip do jogo.
+Descompacte o arquivo zip em uma pasta de sua escolha.
+Abra o terminal ou prompt de comando e navegue até a pasta onde o jogo foi descompactado.
+Execute o arquivo "pyteach.jar" usando o comando "java -jar pyteach.jar".
+Você também encontrará o download da build do jogo em formato .JAR na aba Releases do repositório.
+Funcionalidades do jogo
+O jogo possui as seguintes funcionalidades:
 
-Sumário:
+# Sistema de usuário com interface de login e registro.
+Menu com opções para iniciar o questionário, verificar o ranking, visualizar os créditos dos desenvolvedores e desconectar.
+Questionário com perguntas sobre lógica de programação e Python.
+Exibição da pontuação e ranking alcançados.
+Opções para retornar ao menu principal ou sair do jogo.
 
-Partindo da ideia inicial do grupo em utilizar Java, criamos um ambiente de perguntas e respostas, com interfaces interativas utilizando métodos da classe javax.swing.JFrame, classes utilizadas exclusivamente para gerenciamento da conexão entre programas Java e o BDD (MySQL). Criamos, também, um programa feito para testes de interação entre as classes e o banco de dados e classes que fazem a validação dos jogadores no banco de dados, a partir da interface de Login.
-# Ao longo do código, as seguintes bibliotecas foram utilizadas:
-JavaSQL, JavaStatement, JavaPreparedStatement, JavaResultSet, JavaConnection e JavaDriverManager. Entre outras que foram necessárias ao longo do desenvolvimento do projeto.
-Este projeto enfatiza o uso da linguagem Java, juntamente aos trabalhos no banco de dados MySQL, que aprendemos esse semestre.
-As perguntas são de finalidade educativa, sobre Lógica de programação e Python. As quais, foram disciplinas lecionadas em aula.
+# Contribuidores
+O projeto foi desenvolvido por:
+Luca Pinheiro Gomes
+Yuri Alves Drapack
+Henrique Lin Ye
+Breno Coutinho
 
+# Versão
+Atualmente, o jogo está na sua primeira versão e pode sofrer atualizações no futuro. Quaisquer atualizações serão comunicadas por meio de avisos.
 
-# Sistema do jogo:
-Sistema de usuário, com uma interface de inicio com 2 botões, um para conectar caso o usuário ja seja registrado e outro para Registrar-se, caso ele ainda não for.
-Um menu onde o usuário ja esteja conectado, com um botão para inicar o questionário, outro para verificar o ranking, outro para créditos dos desenvolvedores e um para desconectar.
-Para finalizar, uma interface sera exibida com sua pontuação, o rank atingido e opções para retornar ou sair.
+# Como contribuir
+Se você deseja contribuir para o projeto, siga as instruções abaixo:
 
-⚙ Executando os testes
+Faça um fork deste repositório.
+Crie uma branch para suas alterações: git checkout -b minha-contribuicao.
+Faça as alterações desejadas e commit: git commit -m "Minha contribuição".
+Envie suas alterações para o seu fork: git push origin minha-contribuicao.
+Abra um pull request neste repositório.
 
-Todos os ajustes realizados a partir de testes realizados pela nossa equipe podem ser visualizados a partir dos commits neste repositório.
+# Perguntas frequentes (FAQ)
+Q: Como faço para iniciar o questionário?
+R: Após fazer login, você verá um botão "Jogar" que iniciará o questionário no menu principal.
 
-🧰 Construído com:
-
-Linguagens: Java e SQL.
-
-📌 Versão
-
-Atualmente o jogo está na sua primeira versão, podendo sofrer atualizações daqui em diante. Caso ocorra, será adicionado avisos.
-
-✒ Autores:
-
-O projeto é constituído por: Luca Pinheiro Gomes, Yuri Alves Drapack, Henrique Lin Ye, Breno Coutinho.
+Q: O jogo possui suporte para outros idiomas?
+R: Atualmente, o jogo está disponível apenas em português.
