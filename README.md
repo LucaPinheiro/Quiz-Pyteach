@@ -15,12 +15,12 @@ Para conseguir realizar o Quis, de certa maneira, é interessante conhecer conce
 Sumário:
 
 Partindo da ideia inicial do grupo em utilizar Java, criamos um ambiente de perguntas e respostas, com interfaces interativas utilizando métodos da classe javax.swing.JFrame, classes utilizadas exclusivamente para gerenciamento da conexão entre programas Java e o BDD (MySQL). Criamos, também, um programa feito para testes de interação entre as classes e o banco de dados e classes que fazem a validação dos jogadores no banco de dados, a partir da interface de Login.
-#Ao longo do código, as seguintes bibliotecas foram utilizadas: JavaSQL, JavaStatement, JavaPreparedStatement, JavaResultSet, JavaConnection e JavaDriverManager. Entre outras que foram necessárias ao longo do desenvolvimento do projeto.
+# Ao longo do código, as seguintes bibliotecas foram utilizadas: JavaSQL, JavaStatement, JavaPreparedStatement, JavaResultSet, JavaConnection e JavaDriverManager. Entre outras que foram necessárias ao longo do desenvolvimento do projeto.
 Este projeto enfatiza o uso da linguagem Java, juntamente aos trabalhos no banco de dados MySQL, que aprendemos esse semestre.
 As perguntas são de finalidade educativa, sobre Lógica de programação e Python. As quais, foram disciplinas lecionadas em aula.
 Este projeto possui os seguintes recursos:
 
-#Sistema de usuário, com uma interface de inicio com 2 botões, um para conectar caso o usuário ja seja registrado e outro para Registrar-se, caso ele ainda não for.
+# Sistema de usuário, com uma interface de inicio com 2 botões, um para conectar caso o usuário ja seja registrado e outro para Registrar-se, caso ele ainda não for.
 Um menu onde o usuário ja esteja conectado, com um botão para inicar o questionário, outro para verificar o ranking, outro para créditos dos desenvolvedores e um para desconectar.
 Para finalizar, uma interface sera exibida com sua pontuação, o rank atingido e opções para retornar ou sair.
 
