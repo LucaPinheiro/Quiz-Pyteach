@@ -19,7 +19,7 @@ Partindo da ideia inicial do grupo em utilizar Java, criamos um ambiente de perg
 JavaSQL, JavaStatement, JavaPreparedStatement, JavaResultSet, JavaConnection e JavaDriverManager. Entre outras que foram necessárias ao longo do desenvolvimento do projeto.
 Este projeto enfatiza o uso da linguagem Java, juntamente aos trabalhos no banco de dados MySQL, que aprendemos esse semestre.
 As perguntas são de finalidade educativa, sobre Lógica de programação e Python. As quais, foram disciplinas lecionadas em aula.
-Este projeto possui os seguintes recursos:
+
 
 # Sistema do jogo:
 Sistema de usuário, com uma interface de inicio com 2 botões, um para conectar caso o usuário ja seja registrado e outro para Registrar-se, caso ele ainda não for.
