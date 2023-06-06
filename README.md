@@ -12,9 +12,9 @@ Para instalar o Java, siga as instruções fornecidas pela Oracle em https://www
 Para instalar o serviço de banco de dados, recomendamos o MySQL. Você pode baixar o MySQL em https://dev.mysql.com/downloads/installer/.
 
 Instalação
-Faça o download do arquivo zip do jogo: https://drive.google.com/file/d/1l1Bv6B3j_uDSb7oYzJX1-3Q8CTfXO5MC/view?usp=drive_link
+Faça o download do arquivo zip do jogo: https://drive.google.com/file/d/1l1Bv6B3j_uDSb7oYzJX1-3Q8CTfXO5MC/view?usp=drive_link.
 Descompacte o arquivo zip em uma pasta de sua escolha.
-Baixe e instale o banco de dados MySQL seguindo as instruções fornecidas na página de download https://drive.google.com/file/d/1mYj6BuPlzBWc5QF7WkSHXd1jUn-PYh5u/view?usp=sharing
+Baixe e instale o banco de dados MySQL seguindo as instruções fornecidas na página de download https://drive.google.com/file/d/1mYj6BuPlzBWc5QF7WkSHXd1jUn-PYh5u/view?usp=sharing.
 Abra o terminal ou prompt de comando e navegue até a pasta onde o jogo foi descompactado.
 Execute o arquivo "pyteach.jar" usando o comando "java -jar pyteach.jar".
 Você também encontrará o download da build do jogo em formato .JAR na aba Releases do repositório.
@@ -28,10 +28,10 @@ Opções para retornar ao menu principal ou sair do jogo.
 
 # Contribuidores
 O projeto foi desenvolvido por:
-Luca Pinheiro Gomes
-Yuri Alves Drapack
-Henrique Lin Ye
-Breno Coutinho
+Luca Pinheiro Gomes.
+Yuri Alves Drapack.
+Henrique Lin Ye.
+Breno Coutinho.
 
 # Versão
 Atualmente, o jogo está na sua primeira versão e pode sofrer atualizações no futuro. Quaisquer atualizações serão comunicadas por meio de avisos.
