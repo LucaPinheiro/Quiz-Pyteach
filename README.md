@@ -7,7 +7,7 @@ Projeto Integrador Interdiciplinar - PyTeach: Um jogo de perguntas e respostas q
 
 Para instalar esta aplicação, você necessita possuir java e algum serviço de banco de dados instalados em sua área de trabalho.
 
-Para conseguir realizar o Quis, de certa maneira, é interessante conhecer conceitos básicos sobre Programação, pois assim, o usuário poderá atingir uma maior pontuação no questionário.
+Para conseguir realizar o Quiz, de certa maneira, é interessante conhecer conceitos básicos sobre Programação, pois assim, o usuário poderá atingir uma maior pontuação no questionário.
 
 ⚙ Instalação
 
