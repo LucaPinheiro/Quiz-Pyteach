@@ -18,7 +18,7 @@ Antes de instalar o jogo, certifique-se de ter o Java e um serviço de banco de 
 
 1. Faça o download do arquivo zip do jogo: [link para o arquivo zip do jogo](https://drive.google.com/file/d/1l1Bv6B3j_uDSb7oYzJX1-3Q8CTfXO5MC/view?usp=drive_link).
 2. Descompacte o arquivo zip em uma pasta de sua escolha.
-3. Baixe e instale o banco de dados MySQL seguindo as instruções fornecidas na página de download [link para a página de download do MySQL].
+3. Baixe e instale o banco de dados MySQL seguindo as instruções fornecidas na página de download: [link para a página de download do MySQL](https://drive.google.com/file/d/1mYj6BuPlzBWc5QF7WkSHXd1jUn-PYh5u/view?usp=sharing).
 4. Abra o terminal ou prompt de comando e navegue até a pasta onde o jogo foi descompactado.
 5. Execute o arquivo "pyteach.jar" usando o comando "java -jar pyteach.jar".
 6. Você também encontrará o download da build do jogo em formato .JAR na aba Releases do repositório.
@@ -59,7 +59,9 @@ Se você deseja contribuir para o projeto, siga as instruções abaixo:
 ## Perguntas frequentes (FAQ)
 
 **Q: Como faço para iniciar o questionário?**
+
 R: Após fazer login, você verá um botão "Jogar" que iniciará o questionário no menu principal.
 
 **Q: O jogo possui suporte para outros idiomas?**
+
 R: Atualmente, o jogo está disponível apenas em português.
