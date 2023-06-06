@@ -1,4 +1,5 @@
 # Quiz-Pyteach
+Instituto Mauá de Tecnologia - Ciência Da Computação - Primeiro Semestre
 Projeto Integrador Interdiciplinar - PyTeach: Um jogo de perguntas e respostas que tem como objetivo fazer uma avaliação dos seus conhecimentos sobre Lógica de proramação e Python!
 ⏳ Começando:
 
@@ -40,4 +41,4 @@ Atualmente o jogo está na sua primeira versão, podendo sofrer atualizações d
 
 ✒ Autores:
 
-O projeto é constituído por: Luca Pinheiro Gomes, Yuri Alves Drapack, Henrique Lin Ye, Breno Coutinho
+O projeto é constituído por: Luca Pinheiro Gomes, Yuri Alves Drapack, Henrique Lin Ye, Breno Coutinho.
