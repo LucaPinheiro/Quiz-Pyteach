@@ -56,8 +56,8 @@ public class MySQL {
         JTextField userField = new JTextField();
 
         Object[] message = {
-                "Usuário:", userField,
-                "Senha:", passwordField
+            "Usuário:", userField,
+            "Senha:", passwordField
         };
 
         int option = JOptionPane.showConfirmDialog(null, message, "Acesso ao Banco de Dados", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
@@ -66,7 +66,7 @@ public class MySQL {
             user = userField.getText();
             password = new String(passwordField.getPassword());
         } else {
-            // O usuário cancelou, você pode tratar isso de acordo com a sua necessidade
+            JOptionPane.showMessageDialog(null, "Operação cancelada pelo usuário.", "Acesso ao Banco de Dados", JOptionPane.WARNING_MESSAGE);
         }
     }
 }
