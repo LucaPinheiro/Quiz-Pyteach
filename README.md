@@ -20,7 +20,7 @@ Antes de instalar o jogo, certifique-se de ter o Java e um serviço de banco de 
 
 ## Instalação
 
-1. Faça o download do arquivo zip do jogo: [link para o arquivo zip do jogo](https://drive.google.com/file/d/1l1Bv6B3j_uDSb7oYzJX1-3Q8CTfXO5MC/view?usp=drive_link).
+1. Faça o download do arquivo zip do jogo: [link para o arquivo zip do jogo](https://drive.google.com/file/d/1pkpuOTAUD6uuODl8MidaY2F6k70eamWR/view?usp=sharing).
 2. Descompacte o arquivo zip em uma pasta de sua escolha.
 3. Baixe e instale o banco de dados MySQL seguindo as instruções fornecidas na página de download: [link para a página de download do MySQL](https://drive.google.com/file/d/1mYj6BuPlzBWc5QF7WkSHXd1jUn-PYh5u/view?usp=sharing).
 4. Durante o login no jogo, será necessário fornecer o nome de usuário e senha do seu banco de dados local. Certifique-se de ter o MySQL configurado corretamente.
