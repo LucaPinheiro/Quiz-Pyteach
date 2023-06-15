@@ -48,6 +48,7 @@ O projeto foi desenvolvido por:
 - Yuri Alves Drapack
 - Henrique Lin Ye
 - Breno Coutinho
+- Pedro Rozimbo
 
 ## Versão
 
